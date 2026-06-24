@@ -81,6 +81,36 @@ body.people-page button:hover {
     background-color: #bf360c;
 }
 
+body.react-page {
+    background-color: #fff9c4;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+body.react-page h2 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+body.react-page form, body.react-page table {
+    background-color: #FFAB91;
+    border: 1px solid #d84315;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+body.react-page th {
+    background-color: #d84315;
+}
+
+body.react-page button {
+    background-color: #d84315;
+    color: white;
+}
+
+body.react-page button:hover {
+    background-color: #bf360c;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 2rem;
