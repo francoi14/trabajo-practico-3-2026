@@ -25,3 +25,35 @@ a:hover {
     text-decoration: none;
     font-weight: bold;
 }
+
+.controles {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}

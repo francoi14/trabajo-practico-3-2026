@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="index.html" class="volver">Volver al Inicio</a>
+    <h2>Ejercicio 1: Maquetacion con Flexbox</h2>
+    
+    <div class="controles">
+        <button id="btn-filtrar">Mostrar solo en Stock</button>
+        <button id="btn-reset">Mostrar Todos</button>
+    </div>
+
+    <div id="contenedor-tarjetas" class="contenedor-flex"></div>
+
+    <script>
+        const productos = [
+            { id: 1, nombre: "Monitor Curvo 144hz", stock: true },
+            { id: 2, nombre: "Silla Ergonomica", stock: false },
+            { id: 3, nombre: "Teclado Mecanico", stock: true },
+            { id: 4, nombre: "Mouse Inalambrico", stock: true },
+            { id: 5, nombre: "TV QLED 85", stock: false },
+            { id: 6, nombre: "Pad Mouse XL", stock: true }
+        ];
+
+        const contenedor = document.getElementById('contenedor-tarjetas');
+
+        function renderizar(array) {
+            contenedor.innerHTML = '';
+            array.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'tarjeta';
+                
+                const h3 = document.createElement('h3');
+                h3.textContent = item.nombre;
+                
+                const p = document.createElement('p');
+                p.textContent = item.stock ? 'En Stock' : 'Sin Stock';
+                
+                div.appendChild(h3);
+                div.appendChild(p);
+                contenedor.appendChild(div);
+            });
+        }
+
+        renderizar(productos);
+
+        document.getElementById('btn-filtrar').addEventListener('click', () => {
+            const filtrados = productos.filter(p => p.stock);
+            renderizar(filtrados);
+        });
+
+        document.getElementById('btn-reset').addEventListener('click', () => {
+            renderizar(productos);
+        });
+    </script>
+</body>
+</html>
