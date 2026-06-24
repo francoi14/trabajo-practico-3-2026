@@ -51,6 +51,36 @@ body.flex-page h2 {
     background-color: #bf360c;
 }
 
+body.people-page {
+    background-color: #fff9c4;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+body.people-page h2 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+body.people-page form, body.people-page table {
+    background-color: #FFAB91;
+    border: 1px solid #d84315;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+body.people-page th {
+    background-color: #d84315;
+}
+
+body.people-page button {
+    background-color: #d84315;
+    color: white;
+}
+
+body.people-page button:hover {
+    background-color: #bf360c;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 2rem;
