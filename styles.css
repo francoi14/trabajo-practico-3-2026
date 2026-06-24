@@ -1,12 +1,12 @@
 body.home {
-    background-color: #fff9c4; 
-    color: #000;              
+    background-color: #fff9c4;
+    color: #000;
     font-family: 'Arial', sans-serif;
     padding: 20px;
 }
 
 body.home h1 {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .home a {
@@ -20,6 +20,36 @@ body.home h1 {
     text-decoration: underline;
 }
 
+body.flex-page {
+    background-color: #fff9c4;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+body.flex-page h2 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.flex-page .tarjeta {
+    background-color: #FFAB91;
+    border: 1px solid #d84315;
+    color: #3e2723;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+}
+
+.flex-page button {
+    background-color: #d84315;
+    color: white;
+}
+
+.flex-page button:hover {
+    background-color: #bf360c;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -74,16 +104,6 @@ button {
     gap: 20px;
     justify-content: flex-start;
     margin-top: 20px;
-}
-
-.tarjeta {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
 }
 
 form {
